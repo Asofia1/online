@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SofiMarket - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #ffcc66;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #f57c00;
+    }
+
+    /* Hero */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 120px 80px;
+      background: linear-gradient(135deg, #ffecb3, #fff8e1);
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .hero-text .btn {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #f57c00;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero-text .btn:hover {
+      background: #ff9800;
+    }
+
+    .hero img {
+      max-width: 670px;
+      border-radius: 20px;
+    }
+
+
+   /* footer {
+      background:  #ffcc66;
+      color: #000000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }*/
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><strong>SofiMarket</strong></div>
+    <ul>
+      <li><a href="home1.html#frutas">Frutas</a></li>
+      <li><a href="home1.html#vegetales">Vegetales</a></li>
+      <li><a href="home1.html#hierbas">Hierbas</a></li>
+      <li><a href="home1.html#otros">Semillas</a></li>
+      <li><a href="home1.html#cart-panel">Carrito</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>SofiMarket Productos saludable</h1>
+      <h2>Compra desde tu casa fácil</h2>
+      <p>Disfruta de productos frescos, saludables y de la mejor calidad; compra por kilo o libras.
+        llevamos tus compras de la granja a tu mesa.
+      </p>
+      <button class="btn" onclick="location.href='home1.html'">Ir a la tienda</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.pexels.com/photos/6516537/pexels-photo-6516537.jpeg" alt="mercado">
+    </div>
+  </section>
+
+
+  
+
+</body>
+</html>

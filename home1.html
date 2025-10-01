@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SofiMarket — Frutas y Verduras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <h1>SofiMarket </h1>
+      <p>Productos frescos: frutas, verduras y hierbas</p>
+    </div>
+    <div class="cart-summary">
+      <button id="view-cart" class="btn-orange">Ver carrito </button>
+      <button id="inicio" class="btn-orange" onclick="location.href='index.html'">Inicio</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Navegación rápida -->
+    <nav class="sections-nav">
+      <a href="#frutas">Frutas</a>
+      <a href="#vegetales">Vegetales</a>
+      <a href="#hierbas">Hierbas</a>
+      <a href="#otros">Otros</a>
+    </nav>
+
+    <!-- SECCIÓN: FRUTAS -->
+    <section id="frutas" class="category">
+      <h2>Frutas</h2>
+
+      <div class="subsection">
+        <h3>Cítricos</h3>
+        <div class="products-grid">
+
+<!-- Limón -->
+          <article class="product-card" data-name="Limón Tahití" data-price-per-kg="2.899" data-id="fruta-limon">
+            <img src="https://tienda.comersano.co/162-large_default/limon-pajarito.jpg" alt="Limón Tahití">
+            <h4>Limón Tahití</h4>
+            <p class="desc">Limones aromáticos, perfectos para aderezos y bebidas. Presentación: fresco.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $2.899 / kg</div>
+            </div>
+          </article>
+
+          <!-- Naranja -->
+          <article class="product-card" data-name="Naranja Valencia" data-price-per-kg="5.000" data-id="fruta-naranja">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0uAEtp_m-qgZRCCjlNeBd7fJWCFsloGDxQ&s" alt="Naranja Valencia">
+            <h4>Naranja Valencia</h4>
+            <p class="desc">Naranjas dulces, ideales para jugo y consumo directo. Producto local, talla mediana.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input"> 
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $5.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Mandarina -->
+          <article class="product-card" data-name="Mandarina" data-price-per-kg="2.953" data-id="fruta-mandarina">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgdp6k3FRBdGXIh_m9utni3t9-ZcfI50gokw&s" alt="Mandarina">
+            <h4>Mandarina</h4>
+            <p class="desc">Dulces y fáciles de pelar, ricas en vitamina C. Empaque suelto.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $2.953 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>Frutos rojos</h3>
+        <div class="products-grid">
+          <!-- Fresas -->
+          <article class="product-card" data-name="Fresas" data-price-per-kg="9.700" data-id="fruta-fresa">
+            <img src="https://libbys.es/wordpress/wp-content/uploads/2018/05/fresas.jpg" alt="Fresas">
+            <h4>Fresas</h4>
+            <p class="desc">Fresas frescas, jugosas, perfectas para postres o consumo directo.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $9.700 / kg</div>
+            </div>
+          </article>
+
+          <!-- Arándanos -->
+          <article class="product-card" data-name="Arándanos" data-price-per-kg="20.000" data-id="fruta-arandanos">
+            <img src="https://www.naturvital.com/upload/media/ingredient/0001/01/bc05c8afe4ccd0b655ea089c389002f738021a02.jpeg" alt="Arándanos">
+            <h4>Arándanos</h4>
+            <p class="desc">Pequeños frutos azules ricos en antioxidantes. Ideal para desayunos.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $20.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- cereza -->
+          <article class="product-card" data-name="Cereza" data-price-per-kg="10.000" data-id="fruta-cereza">
+            <img src="https://frestofoods.com/wp-content/uploads/2023/10/cereza.webp" alt="Cerezas">
+            <h4>Cereza</h4>
+            <p class="desc">Sabor intenso, delicadas y perfectas para salsas y postres.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $10.000 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: VEGETALES -->
+    <section id="vegetales" class="category">
+      <h2>Vegetales</h2>
+
+      <div class="subsection">
+        <h3>Hojas</h3>
+        <div class="products-grid">
+          <!-- Lechuga -->
+          <article class="product-card" data-name="Lechuga romana" data-price-per-kg="5.000" data-id="veg-lechuga">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_gWr7162njIUwNoda9krJYsKfN4Y7mzxP8w&s" alt="Lechuga romana">
+            <h4>Lechuga romana</h4>
+            <p class="desc">Hojas crujientes, perfecta para ensaladas frescas.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $5.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Espinaca -->
+          <article class="product-card" data-name="Espinaca" data-price-per-kg="5.500" data-id="veg-espinaca">
+            <img src="https://www.agroserag.com/site/wp-content/uploads/2022/09/FT-Espinaca-Python-RZ-F1.jpg" alt="Espinaca">
+            <h4>Espinaca</h4>
+            <p class="desc">Hojas tiernas, excelente para cocinar o en crudo.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $5.500 / kg</div>
+            </div>
+          </article>
+
+          <!-- Rúcula -->
+          <article class="product-card" data-name="Rúcula" data-price-per-kg="3.800" data-id="veg-acelga">
+            <img src="https://5aldia.cl/wp-content/uploads/2018/03/Captura-de-pantalla-2018-03-23-a-las-12.42.13.png" alt="Rúcula">
+            <h4>Acelga</h4>
+            <p class="desc">Buena para guisos y salteados. Hojas grandes y frescas.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $3.800 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>Raíces</h3>
+        <div class="products-grid">
+          <!-- Zanahoria -->
+          <article class="product-card" data-name="Zanahoria" data-price-per-kg="3.875" data-id="veg-zanahoria">
+            <img src="https://5aldia.cl/wp-content/uploads/2018/03/zanahoria.jpg" alt="Zanahoria">
+            <h4>Zanahoria</h4>
+            <p class="desc">Crujiente y dulce, ideal para snacks y cocina.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $3.875 / kg</div>
+            </div>
+          </article>
+
+          <!-- Papa -->
+          <article class="product-card" data-name="Papa" data-price-per-kg="970" data-id="veg-papa">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8LhSo7AGlakosiCVlB-EiRXVNIScLHkcdvQ&s" alt="Papa">
+            <h4>Papa</h4>
+            <p class="desc">Variedad local, buena para cocinar y freír.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $970 / kg</div>
+            </div>
+          </article>
+
+          <!-- Remolacha -->
+          <article class="product-card" data-name="Remolacha" data-price-per-kg="3.648" data-id="veg-remolacha">
+            <img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/Remolacha.jpg" alt="Remolacha">
+            <h4>Remolacha</h4>
+            <p class="desc">Buena para ensaladas y jugos nutritivos.</p>
+            <div class="buy-row">
+              <input type="number" min="0.1" step="0.1" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $3.648 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: HIERBAS -->
+    <section id="hierbas" class="category">
+      <h2>Hierbas</h2>
+
+      <div class="subsection">
+        <h3>Aromáticas</h3>
+        <div class="products-grid">
+          <!-- Cilantro -->
+          <article class="product-card" data-name="Cilantro" data-price-per-kg="6.500" data-id="herb-cilantro">
+            <img src="https://villavoexpress.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NDE1MCwicHVyIjoiYmxvYl9pZCJ9fQ==--6958954344d25746ce15535bbfcce674db867745/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZml0IjpbODAwLDgwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1420d7fd3d20057726f0ef3c0043db24ca0403be/cilantro.jpg?locale=es" alt="Cilantro">
+            <h4>Cilantro</h4>
+            <p class="desc">Hojas aromáticas para sazonar platos tradicionales.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $6.500 / kg</div>
+            </div>
+          </article>
+
+          <!-- Perejil -->
+          <article class="product-card" data-name="Perejil" data-price-per-kg="3.200" data-id="herb-perejil">
+            <img src="https://fruverhome.co/wp-content/uploads/2020/08/Perejil-Crespo.jpg.webp" alt="Perejil">
+            <h4>Perejil</h4>
+            <p class="desc">Ideal para guarniciones y salsas.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $3.200 / kg</div>
+            </div>
+          </article>
+
+          <!-- Albahaca -->
+          <article class="product-card" data-name="Albahaca" data-price-per-kg="4.000" data-id="herb-albahaca">
+            <img src="https://mercadomadrid.com.co/11086-superlarge_default_2x/albahaca-fresca-kilo.jpg" alt="Albahaca">
+            <h4>Albahaca</h4>
+            <p class="desc">Sabor fresco y perfumado; excelente para pesto y ensaladas.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.05" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $4.000 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>Medicinales</h3>
+        <div class="products-grid">
+          <!-- Manzanilla -->
+          <article class="product-card" data-name="Manzanilla (seca)" data-price-per-kg="5.000" data-id="herb-manzanilla">
+            <img src="https://sambil.sigo.com.ve/images/thumbs/0019179_manzanilla-seca-en-hojas-80-gr_450.jpeg" alt="Manzanilla">
+            <h4>Manzanilla (seca)</h4>
+            <p class="desc">Flores secas para infusiones relajantes.</p>
+            <div class="buy-row">
+              <input type="number" min="0.02" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $5.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Menta -->
+          <article class="product-card" data-name="Menta" data-price-per-kg="3.500" data-id="herb-menta">
+            <img src="https://www.perfume-man.com/wp-content/uploads/2018/05/hojas-verdes-menta-comun.jpg" alt="Menta">
+            <h4>Menta</h4>
+            <p class="desc">Aroma refrescante para bebidas e infusiones.</p>
+            <div class="buy-row">
+              <input type="number" min="0.02" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $3.500 / kg</div>
+            </div>
+          </article>
+
+          <!-- Tila -->
+          <article class="product-card" data-name="Tila (seca)" data-price-per-kg="5.000" data-id="herb-tila">
+            <img src="https://m.media-amazon.com/images/I/61ZOwXaAXyL.jpg" alt="Tila">
+            <h4>Flor de Tila (seca)</h4>
+            <p class="desc">Flores secas para infusiones calmantes.</p>
+            <div class="buy-row">
+              <input type="number" min="0.02" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $5.000 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: OTROS -->
+    <section id="otros" class="category">
+      <h2>Otros</h2>
+
+      <div class="subsection">
+        <h3>Semillas y frutos secos</h3>
+        <div class="products-grid">
+          <!-- Semillas de girasol -->
+          <article class="product-card" data-name="Semillas de girasol" data-price-per-kg="9.000" data-id="oth-girasol">
+            <img src="https://mrbatatacolombia.com/wp-content/uploads/2023/09/semilla-de-girasol.jpg" alt="Semillas de girasol">
+            <h4>Semillas de girasol</h4>
+            <p class="desc">Snacks y topping para ensaladas; ricas en nutrientes.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $9.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Nueces -->
+          <article class="product-card" data-name="Nueces" data-price-per-kg="25.000" data-id="oth-nueces">
+            <img src="https://www.millerchemical.com/es/wp-content/uploads/sites/2/2021/03/iStock-532050256.png" alt="Nueces">
+            <h4>Nueces</h4>
+            <p class="desc">Fuente de grasas saludables; ideal como snack o en postres.</p>
+            <div class="buy-row">
+              <input type="number" min="0.05" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $25.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Semillas de chía -->
+          <article class="product-card" data-name="Semillas de chía" data-price-per-kg="10.000" data-id="oth-chia">
+            <img src="https://www.herbazest.com/imgs/d/8/5/451175/chia.jpg" alt="Semillas de chía">
+            <h4>Semillas de chía</h4>
+            <p class="desc">Ricas en omega-3; para desayunos y batidos.</p>
+            <div class="buy-row">
+              <input type="number" min="0.02" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $10.000 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3>Empacados (naturales)</h3>
+        <div class="products-grid">
+          <!-- Miel -->
+          <article class="product-card" data-name="Miel natural 250g" data-price-per-kg="15.000" data-id="oth-miel">
+            <img src="https://fruverianda.com/wp-content/uploads/2020/08/MIEL-DE-ABEJA.jpg" alt="Miel">
+            <h4>Miel natural 250g</h4>
+            <p class="desc">Miel pura, empaque 250 g. Ideal para endulzar naturalmente.</p>
+            <div class="buy-row">
+              <!-- Price per kg is set; user will usually buy fraction -->
+              <input type="number" min="0.05" step="0.01" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $15.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Jugo natural -->
+          <article class="product-card" data-name="Jugo natural 1L" data-price-per-kg="8.000" data-id="oth-jugo">
+            <img src="https://img.freepik.com/psd-gratis/bebida-batido-desintoxicacion-aislada_23-2151269916.jpg" alt="Jugo natural">
+            <h4>Jugo natural 1L</h4>
+            <p class="desc">Jugo fresco empacado 1 litro. Sabor natural sin aditivos.</p>
+            <div class="buy-row">
+              <input type="number" min="0.25" step="0.25" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $8.000 / kg</div>
+            </div>
+          </article>
+
+          <!-- Aceite de oliva 500ml -->
+          <article class="product-card" data-name="Aceite de oliva 500ml" data-price-per-kg="50.000" data-id="oth-aceite">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbulme1o9MUansglkilnC0FwG1wtp6ZW3WeQ&s" alt="Aceite de oliva">
+            <h4>Aceite de oliva 500ml</h4>
+            <p class="desc">Aceite extra virgen, empaque 500ml. Uso culinario.</p>
+            <div class="buy-row">
+              <input type="number" min="0.25" step="0.25" value="1" class="weight-input">
+              <select class="unit-select"><option value="kg">kg</option><option value="lb">lb</option></select>
+              <button class="btn-yellow add-to-cart">Agregar</button>
+              <div class="price-tag">Precio: $50.000 / kg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CARRITO: modal simple -->
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Carrito de compras</h3>
+      <button id="close-cart" class="btn-light">Cerrar</button>
+    </div>
+
+    <table id="cart-table" class="cart-table">
+      <thead>
+        <tr><th>Producto</th><th>Precio (por kg)</th><th>Cantidad</th><th>Acciones</th></tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr class="total-row">
+          <td colspan="3" class="total-label">Total</td>
+          <td id="cart-total">$0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="cart-actions">
+      <button id="clear-cart" class="btn-light">Vaciar carrito</button>
+      <button id="checkout" class="btn-orange">Realizar pedido</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

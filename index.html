@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SofiMarket 🛒🍓 - Home</title>
+  <title>SofiMarket 🍋 - Home</title>
   <style>
     body {
       margin: 0;
@@ -19,6 +19,7 @@
       align-items: center;
       padding: 15px 40px;
       background: #ffcc66;
+      flex-wrap: wrap;
     }
 
     .navbar ul {
@@ -27,10 +28,7 @@
       gap: 25px;
       margin: 0;
       padding: 0;
-    }
-
-    .navbar li {
-      display: inline;
+      flex-wrap: wrap;
     }
 
     .navbar a {
@@ -51,10 +49,12 @@
       align-items: center;
       padding: 120px 80px;
       background: linear-gradient(135deg, #ffecb3, #fff8e1);
+      flex-wrap: wrap;
     }
 
     .hero-text {
       max-width: 50%;
+      min-width: 300px;
     }
 
     .hero-text h1 {
@@ -91,25 +91,143 @@
     }
 
     .hero img {
-      max-width: 670px;
+      max-width: 600px;
+      width: 100%;
       border-radius: 20px;
     }
 
-
-   /* footer {
-      background:  #ffcc66;
-      color: #000000;
+    /* Sección Sobre Nosotros */
+    .about {
+      padding: 80px 60px;
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }*/
+      background: #fff8e1;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Beneficios */
+    .benefits {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 80px 60px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .benefit {
+      max-width: 250px;
+      margin: 20px;
+    }
+
+    .benefit img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+
+    .benefit h3 {
+      color: #f57c00;
+      margin-bottom: 10px;
+    }
+
+    .benefit p {
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #ffcc66;
+      color: #000;
+      text-align: center;
+      padding: 30px;
+    }
+
+    /*  Responsive Design */
+    @media (max-width: 1024px) {
+      .hero {
+        padding: 80px 40px;
+      }
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 20px;
+      }
+
+      .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .hero img {
+        max-width: 100%;
+        border-radius: 15px;
+      }
+
+      .benefits {
+        padding: 50px 20px;
+      }
+
+      .about {
+        padding: 50px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+
+      .hero-text h2 {
+        font-size: 1.2rem;
+      }
+
+      .hero-text p {
+        font-size: 0.95rem;
+      }
+
+      .benefit img {
+        width: 60px;
+      }
+
+      footer {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo"><strong>SofiMarket 🛒🍓</strong></div>
+    <div class="logo"><strong>SofiMarket 🍋</strong></div>
     <ul>
       <li><a href="home1.html#frutas">Frutas</a></li>
       <li><a href="home1.html#vegetales">Vegetales</a></li>
@@ -124,9 +242,8 @@
     <div class="hero-text">
       <h1>SofiMarket Productos Saludables</h1>
       <h2>Compra desde tu casa fácil</h2>
-      <p>Disfruta de productos frescos, saludables y de la mejor calidad; Compra por kilo o libras.
-        Llevamos tus compras de la granja a tu mesa.
-      </p>
+      <p>Disfruta de productos frescos, saludables y de la mejor calidad. 
+        Compra por kilo o por libra y recibe tus pedidos directamente desde el campo hasta tu hogar.</p>
       <button class="btn" onclick="location.href='home1.html'">Ir a la tienda</button>
     </div>
     <div class="hero-img">
@@ -134,8 +251,39 @@
     </div>
   </section>
 
+  <!-- Sobre Nosotros -->
+  <section class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>SofiMarket</strong> creemos en la alimentación saludable, natural y accesible para todos. 
+      Trabajamos directamente con agricultores locales para ofrecer frutas, verduras y hierbas frescas, sin intermediarios. 
+      Nuestra misión es llevar calidad y sabor natural a cada hogar colombiano.</p>
+  </section>
 
-  
+  <!-- Beneficios -->
+  <section class="benefits">
+    <div class="benefit">
+      <img src="https://cdn-icons-png.flaticon.com/512/415/415733.png" alt="Frescura">
+      <h3>Frescura Garantizada</h3>
+      <p>Productos seleccionados cuidadosamente para garantizar su calidad y frescura.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="https://cdn-icons-png.flaticon.com/512/2983/2983787.png" alt="Entrega">
+      <h3>Entregas Rápidas</h3>
+      <p>Recibe tus pedidos en casa en el menor tiempo posible.</p>
+    </div>
+
+    <div class="benefit">
+      <img src="https://cdn-icons-png.flaticon.com/512/888/888879.png" alt="Pago">
+      <h3>Pagos Seguros</h3>
+      <p>Contamos con múltiples métodos de pago 100% seguros y confiables.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SofiMarket 🍋. Todos los derechos reservados. 🌿</p>
+  </footer>
 
 </body>
 </html>
